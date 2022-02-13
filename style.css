@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Syne+Tactile&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url('bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.mainarea{
+    width: 85%;
+    height: 80%;
+    /* border: 2px solid; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.leftpart{
+    width: 25%;
+    height: 100%;
+    background: #FF6464;
+    border-radius: 25px;
+    padding: 15px 40px;
+    text-align: center;
+    transition: 1s!important;
+}
+.leftpart:hover{
+    margin-top: -20px;
+}
+
+.leftpart .photo{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 0% 50% 50% 50%;
+    overflow: hidden;
+}
+.leftpart h1{
+    font-family: 'Pacifico', cursive;
+    color: aliceblue;
+}
+
+
+.leftpart h2{
+    font-family: 'Syne Tactile', cursive;
+    margin-bottom: 5px;
+}
+.menuarea{
+    margin-top: 10px;
+    line-height: 25px;
+    font-size: 24px;
+}
+.menuarea ul{
+    list-style: none;
+}
+
+.menuarea ul li{
+    padding: 5px 0px;
+    margin: 2px 0px;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.menuarea ul li:nth-child(even):hover{
+    background: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.menuarea ul li:nth-child(odd):hover{
+    background: rgb(208, 255, 0);
+    font-weight: bold;
+}
+
+.socialicon h1 span a{
+    text-decoration: none;
+    color: rgb(17, 223, 127);
+}
+
+.copyright{
+    margin-top: 20px;
+}
+
+
+.rightpart{
+    width: 72%;
+    height: 100%;
+    background: #D3ECA7;
+    border-radius: 25px;
+}
+
+
+
+/* leftpart end */
+.rightpart{
+    position: relative;
+    overflow: hidden;
+}
+.rightpart .mainscreen h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #e0b5b5;
+    opacity: 0.8;
+    padding: 100px;
+    font-size: 60px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: 1s;
+}
+
+.rightpart .mainscreen h1:hover{
+    padding: 150px;
+    font-size: 80px;
+    letter-spacing: 25px;
+}
+
+.rightpart .mainscreen .mainbg{
+    width: 100%;
+    height: 100%;
+    
+}
+/* hide box are here */
+.aboutscreen{
+    display: none;
+}
+.skillbox{
+    display: none;
+}
+.portfoliobox{
+    display: none;
+}
+
+.aboutscreen,
+.skillbox, 
+.portfoliobox,
+.contactbox{
+    height: 100%;
+}
+.aboutscreen h1,
+.skillbox h1 ,
+.portfoliobox h1,
+.contactbox h1
+{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 0px;
+    font-family: 'Pacifico', cursive;
+}
+
+.aboutscreen hr ,
+.skillbox hr, 
+.portfoliobox hr,
+.contactbox hr{
+    height: 4px;
+    width: 95%;
+    background: rgb(0, 225, 255);
+    margin: 0 auto;
+}
+.aboutscreen h1,
+.skillbox h1,
+.portfoliobox h1,
+.contactbox h1{
+    transition: 0.5s;
+}
+.aboutscreen h1 span ,
+.skillbox h1 span,
+.portfoliobox h1 span,
+.contactbox h1 span
+{
+    color: cadetblue;
+}
+
+.aboutscreen h1:hover span ,
+.skillbox h1:hover span,
+.portfoliobox h1:hover span,
+.contactbox h1:hover span{
+    color: rgb(0, 0, 0);
+}
+.aboutscreen h1:hover,
+.skillbox h1:hover,
+.portfoliobox h1:hover,
+.contactbox h1:hover{
+    color: cadetblue;
+}
+
+.aboutscreenbox{
+    width: 95%;
+    height: 80%;
+    margin: auto;
+    margin-top: 10px;
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutleftpart{
+    width: 48%;
+    height: 100%;
+    /* background-color: red; */
+    padding: 20px;
+}
+
+.aboutphoto{
+    width: 80%;
+    margin:auto;
+}
+.aboutphoto img{
+    width: 200px;
+    display: block;
+    height: 200px;
+    margin: auto;
+    border: none;
+    border-radius: 50%;
+    transition: 0.5s;
+   
+
+}
+.aboutphoto:hover img{
+    border-right:10px solid white;
+    border-bottom:10px solid white;
+}
+
+.aboutleftpart p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 25px;
+    font-weight: bold;
+}
+.aboutrightpart{
+    width: 48%;
+    height: 100%;
+   
+}
+
+
+.aboutrightpart ul{
+    /* border: 1px solid; */
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.aboutrightpart ul span{
+    font-size: 24px;
+    font-weight: bold;
+    background: #e0b5b5;
+    padding: 5px 8px; 
+}
+
+.aboutrightpart ul li{
+    font-size: 24px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 25px;
+    border: 1px dotted white;
+}
+
+.skillboxarea{
+    width: 95%;
+    height: 80%;
+    /* border: 1px solid; */
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2px;
+    
+}
+
+.skillboxarea div{
+    border: 1px solid;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;  
+}
+
+.box1{
+    background-color: #FF6464;
+}
+.box2{
+    background-color: #b91818;
+}
+.box3{
+    background-color: #9fbe13;
+}
+.box4{
+    background-color: #09d6e9;
+}
+.box5{
+    background-color: #f32e0b;
+}
+.box6{
+    background-color: #6467ff;
+}
+.box7{
+    background-color: #76ff64;
+}
+.box8{
+    background-color: #dd08dd;
+}
+.box9{
+    background-color: #e0095b;
+}
+.box10{
+    background-color: #dbff64;
+}
+.box11{
+    background-color: #3217ca;
+}
+.box12{
+    background-color: #f00505;
+}
+
+
+.portfoliobox .btnarea{
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnarea button{
+    padding: 10px 12px;
+    font-size: 18px;
+}
+
+.portfoliowork{
+    width: 95%;
+    height: 65%;
+    margin: auto;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 5px;
+}
+
+.portfoliowork div{
+    /* border: 1px solid;   */
+}
+.portfoliowork .box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 0px 10px 15px 25px;
+    overflow: hidden;
+}
+ .portfoliowork .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.5s;
+    
+} 
+.portfoliowork .box img:hover{
+    filter: grayscale(0%);
+    margin-top: -2px;
+}
